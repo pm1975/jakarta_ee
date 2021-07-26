@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Formularz rejestracji</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Przykładowy formularz rejestracji">
+</head>
+
+<body>
+    <!-- 
+        to ma sens, gdy mamy aplikację javy i ta aplikacja działa po stronie serwera 
+        oraz będzoe w stanie odebrać te rzeczy, które będą w tym formularzu zdefiniowane
+    -->
+    <!-- <form action="/register" method="POST"></form> -->
+
+    <!-- <h2>Zarejestruj się</h2> -->
+    <form>
+        <fieldset>
+            <legend>Dane konta</legend>
+            <div>
+                <label for="username">Nazwa użytkownika</label>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <label for="email">Adres email</label>
+                <input type="email" id="email" placeholder="jan@kowalski.pl">
+            </div>
+            <div>
+                <label for="pass">Hasło</label>
+                <input type="password" id="pass">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dane personalne</legend>
+            <div>
+                <label for="firstname">Imię</label>
+                <input type="text" id="firstname">
+            </div>
+            <div>
+                <label for="lastname">Nazwisko</label>
+                <input type="text" id="lastname">
+            </div>
+            <div>
+                <label for="age">Wiek</label>
+                <input type="number" id="age">
+            </div>
+            <div>
+                <p>Płeć</p>
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">Mężczyzna</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Kobieta</label>
+            </div>
+        </fieldset>
+        <button>
+            Zarejestruj się
+        </button>
+    </form>
+</body>
+
+</html>
