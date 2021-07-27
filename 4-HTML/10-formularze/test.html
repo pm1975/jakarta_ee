@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Test pamięci</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Co zapamiętałem z wczoraj">
+</head>
+
+<body>
+    <form>
+        <h2>Test</h2>
+        <fieldset>
+            <legend>Zapamiętane</legend>
+            <div>
+                <label for="firstname">Imię</label>
+                <input type="text" name="" id="firstname" required>
+            </div>
+            <div>
+                <label for="lastname">Nazwisko</label>
+                <input type="text" name="" id="lastname">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="" id="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Niezapamiętane</legend>
+            <div>
+                <label for="password">Hasło</label>
+                <input type="password" name="" id="password">
+            </div>
+            <div>
+                <p>Płeć</p>
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">Mężczyzna</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Kobieta</label>
+            </div>
+            <div>
+                <p>
+                    <label for="language">Języki programowania</label>
+                    <select name="category" id="language">
+                        <option value="">vba</option>
+                        <option value="">c#</option>
+                    </select>
+                </p>
+            </div>
+            <div>
+                <label for="future">Inne</label>
+                <input list="tags" id="future">
+                <datalist id="tags">
+                    <option value="java">
+                    <option value="python">
+                </datalist>
+            </div>
+        </fieldset>
+        <button>Zapisz</button>
+    </form>
+</body>
+
+</html>
